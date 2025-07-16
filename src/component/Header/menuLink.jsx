@@ -30,7 +30,7 @@ export const Menu = () => {
         <li>
           <Link to="/more">More</Link>
           <ul className="submenu">
-            <li>Popular people</li>
+            <li>Popular peopless</li>
           </ul>
         </li>
       </ul>
