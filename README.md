@@ -2,4 +2,4 @@
 # TheMoviedb
 Designing a movie and series website with React
 =======
-![توضیح عکس](https://raw.githubusercontent.com/username/repo-name/main/images/20250719_194004_2109872872.jpg
+https://raw.githubusercontent.com/username/repo-name/main/images/20250719_194004_2109872872.jpg
