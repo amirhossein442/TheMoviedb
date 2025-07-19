@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 1000px;
-  width: 100% ;
+  width: 100%;
 }
 
 /*navbar*/
@@ -75,6 +75,7 @@ body {
   margin-left: auto;
   margin-right: 20px;
 }
+
 .menu li {
   position: relative;
 }
@@ -85,6 +86,7 @@ body {
   text-decoration: none;
   transition: color 0.2s ease;
 }
+
 .submenu {
   position: absolute;
   top: 100%;
@@ -92,21 +94,23 @@ body {
   list-style: none;
   background: #f9f9f9f9;
   color: #3e3b3b;
-  line-height:30px;
+  line-height: 30px;
   font-size: small;
   border-radius: 5px;
   padding: 0.5em 2em;
   padding-right: 5em;
   display: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.submenu li:hover{
+.submenu li:hover {
   cursor: pointer;
 }
+
 .menu li:hover .submenu {
   display: block;
 }
+
 .menu li a:hover {
   color: #808080;
   cursor: pointer;
@@ -145,10 +149,12 @@ body {
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 .navbar-right button:hover {
   background-color: #f9f9f9;
   color: #00006d;
 }
+
 /* header-part2*/
 .pic-search {
   display: flex;
@@ -162,13 +168,15 @@ body {
   background-image: linear-gradient(to bottom,
       rgba(7, 2, 54, 0.3),
       rgba(7, 2, 54, 0.5),
-      rgba(7, 2, 54, 0.7)), 
-      url('/src/img/picForHeader.jpg');
+      rgba(7, 2, 54, 0.7)),
+    url('/src/img/picForHeader.jpg');
 }
-.pic-search h1{
+
+.pic-search h1 {
   margin-bottom: 4rem;
 }
-.search-box input{
+
+.search-box input {
   width: 100%;
   height: 3em;
   border-radius: 20px;
@@ -177,11 +185,12 @@ body {
   border: none;
 }
 
-.search-box{
+.search-box {
   position: relative;
   display: flex;
 }
-.pic-search button{
+
+.pic-search button {
   border-radius: 25px;
   width: 7em;
   height: 3.1em;
@@ -193,21 +202,64 @@ body {
   font-size: 1rem;
   transition: color 0.2s ease;
 }
-.pic-search button:hover{
+
+.pic-search button:hover {
   color: #00006d;
   cursor: pointer;
 }
 
-/*Slider*/
+/*Slider bettwen*/
 .Trending{
-  margin-left: 1em;
+  font-size: 1.5rem;
+  color: #00006d;
+  margin-right: 1em;
 }
+.slider-between {
+  margin-left: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.sliderBetween-buttons {
+  font-size: 14px;
+  text-align: center;
+  height: 2em;
+  width: 16.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: #00006d 1px solid;
+  border-radius: 1em;
+}
+
+.sliderBetween-buttons h3:hover {
+  cursor: pointer;
+}
+
+.Today,
+.This-week {
+  padding: 0.3em 2em;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  color: #00006d;
+  transition: all .2s ease;
+}
+
+/* حالت فعال */
+.active {
+  color: #f9f9f9;
+  background-color: #00006d;
+}
+
+
+/*Slider1*/
 .slider {
   position: relative;
   height: 25em;
   width: 250px;
   color: #000000;
   margin-left: 1em;
+  margin-bottom: 2em;
 }
 
 .slider img {
@@ -216,6 +268,7 @@ body {
   border-radius: 1em;
   position: cover;
 }
+
 .slider p {
   position: absolute;
   bottom: 40px;
@@ -227,11 +280,85 @@ body {
   border-radius: 50%;
   font-weight: bold;
 }
-.slider h3{
+
+.slider h3 {
   margin-top: 30px;
   margin-bottom: 0;
 }
-.slider h4{
+
+.slider h4 {
   margin-top: 5px;
   color: #808080;
+}
+/*slider2*/
+/*between2*/
+.beetwen-container2{
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 54%;
+}
+.tab-wrapper {
+  width: 31em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  border: 1px solid #00006d;
+  text-align: center;
+  border-radius: 30px;
+}
+.swiper-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tab-btn {
+  border: none;
+  color: #00006d;
+  font-weight: bold;
+  border-radius: 52px;
+  transition: background 0.3s ease, color 0.3s ease;
+  padding: .5em 0;
+}
+
+.tab-btn.active {
+  background:#0b0b2c;
+  color: #f9f9f9;
+}
+
+.tab-wrapper li:hover{
+  cursor: pointer;
+}
+
+.slider-title {
+  margin-left: 1em;
+  color: #00006d;
+  
+}
+
+
+/*slider2*/
+.slider-swiper{
+  width: 95%;
+  height: 15em;
+}
+.slider2 {
+  width: 100px;
+}
+.slider2 img {
+  width: 100%;
+  height: 11em;
+  object-fit: cover;
+  border-radius: 1em;
+}
+
+.slider2 h3 {
+  font-size: 1em;
+  color: #f9f9f9e5;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }

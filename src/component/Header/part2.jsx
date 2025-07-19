@@ -1,12 +1,13 @@
+
 export const Header2 = () => {
   return (
-    <div className="pic-search">
+    <div className="pic-search" >
       <h1>
         Welcome.
         <br /> Millions of movies, TV shows and people to discover. Explore now.
       </h1>
       <div className="search-box">
-        <input
+        <input 
           type="text"
           placeholder="Search for a movie, tv show, person..."
         />

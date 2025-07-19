@@ -4,28 +4,35 @@ import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { Between } from "./Between";
 
-export const Sliders = () => {
+export const Sliders1 = () => {
   const [movies, setMovies] = useState([]);
-
   useEffect(() => {
     fetch(
       "https://api.themoviedb.org/3/trending/movie/day?api_key=c749ba85a95fb5a1032d6cc9d8bf39a0"
     )
       .then((res) => res.json())
       .then((data) => setMovies(data.results))
-      .catch((err) => console.error("Error fetching movies:", err),
-    alert("Failed to load trending movies. Please try again later."));
+      .catch((err) => console.error("Error fetching movies:", err));
   }, []);
-  console.log(movies);
+
   return (
     <>
-      <h1 className="Trending">Trending</h1>
-      <Swiper navigation={true} modules={[Navigation]} spaceBetween={0} slidesPerView={5}>
+      <Between />
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        spaceBetween={0}
+        slidesPerView={5}
+      >
         {movies.map((movie) => (
           <SwiperSlide key={movie.id}>
             <div className="slider">
               <img
+                onClick={() =>
+                  window.open(`https://www.themoviedb.org/movie/${movie.id}`)
+                }
                 src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
                 alt={movie.title}
               />
