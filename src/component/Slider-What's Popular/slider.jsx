@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Between } from "./Between";
 
-export const Sliders1 = () => {
+export const Sliders3 = () => {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     fetch(

@@ -10,8 +10,8 @@ export const Sliders2 = () => {
         width: "100%",
         height: "20em",
         backgroundImage: imgBg
-          ? `linear-gradient(to right, #e6efef7a, #196b6a72), url(${imgBg})`
-          : "linear-gradient(to right, #7af4ff93, #196b6ade)",
+          ? `linear-gradient(to right, #000000be, #54646372), url(${imgBg})`
+          : "linear-gradient(to right, #0d253f, #0d253f94)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

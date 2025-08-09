@@ -2,15 +2,17 @@ body {
   font-family: 'Arial Narrow Bold', sans-serif;
   margin: 0;
   padding: 0;
-  margin-bottom: 1000px;
   width: 100%;
 }
 
 /*navbar*/
 .navbar {
+  position: fixed;
   display: flex;
-  background-color: #00006d;
+  background-color: #0d253f;
   right: 0;
+  left: 0;
+  z-index: 2;
   height: 4em;
   justify-content: space-between;
   margin-bottom: 0;
@@ -50,6 +52,7 @@ body {
   margin-right: 20px;
   align-items: center;
 }
+
 
 .header input {
   display: flex;
@@ -161,7 +164,7 @@ body {
   flex-direction: column;
   background-color: #808080;
   height: 15rem;
-  padding: 4rem 3rem;
+  padding: 12rem 3rem;
   color: #f9f9f9;
   background-size: cover;
   background-position: center;
@@ -181,8 +184,13 @@ body {
   height: 3em;
   border-radius: 20px;
   font-size: 1em;
+  
   outline: none;
   border: none;
+}
+.search-box ::placeholder {
+  padding: 1em 1em;
+  color: #3e3b3bbb;
 }
 
 .search-box {
@@ -215,6 +223,7 @@ body {
   margin-right: 1em;
 }
 .slider-between {
+  margin-top: 4rem;
   margin-left: 2em;
   display: flex;
   align-items: center;
@@ -298,6 +307,10 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 54%;
+  
+}
+.beetwen-container2 h2{
+  color: #f9f9f9;
 }
 .tab-wrapper {
   width: 31em;
@@ -322,6 +335,7 @@ body {
   border-radius: 52px;
   transition: background 0.3s ease, color 0.3s ease;
   padding: .5em 0;
+  color: #f9f9f9;
 }
 
 .tab-btn.active {
@@ -361,4 +375,27 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+
+/* footer*/
+.footer{
+  margin-top: 4em;
+  display: flex;
+  gap: 50px;
+  bottom: 0;
+  height: 14rem;
+  right: 0;
+  background-image: linear-gradient(to right, #0d253f, #193857) ;
+  padding: 5rem 10rem;
+  color: #f9f9f9;
+}
+
+.footer div{
+  width: 14rem;
+  line-height: 30px;
+}
+
+.footer .logo{
+  width: 22rem;
 }
