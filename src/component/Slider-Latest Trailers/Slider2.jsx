@@ -9,12 +9,14 @@ export const Sliders2 = () => {
       style={{
         width: "100%",
         height: "20em",
+        padding: "0 0",
         backgroundImage: imgBg
           ? `linear-gradient(to right, #000000be, #54646372), url(${imgBg})`
           : "linear-gradient(to right, #0d253f, #0d253f94)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        
       }}
     >
       <Between />

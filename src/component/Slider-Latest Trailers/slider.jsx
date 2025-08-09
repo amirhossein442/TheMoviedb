@@ -6,11 +6,10 @@ export const Slider = ({ setimgBg }) => {
   const [movies2, setMovies2] = useState([]);
   useEffect(() => {
     fetch(
-      "https://api.themoviedb.org/3/trending/movie/day?api_key=c749ba85a95fb5a1032d6cc9d8bf39a0"
+      "https://api.themoviedb.org/3/movie/upcoming?api_key=c749ba85a95fb5a1032d6cc9d8bf39a0"
     )
       .then((res) => res.json())
       .then((data) => setMovies2(data.results))
-      .catch((err) => console.error("Error fetching movies:", err));
   }, []);
   return (
     <div>

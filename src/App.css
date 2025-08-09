@@ -219,14 +219,15 @@ body {
 /*Slider bettwen*/
 .Trending{
   font-size: 1.5rem;
-  color: #00006d;
+  color: #0d253f;
   margin-right: 1em;
 }
 .slider-between {
-  margin-top: 4rem;
   margin-left: 2em;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
+  color: #0d253f;
 }
 
 .sliderBetween-buttons {
@@ -237,7 +238,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: #00006d 1px solid;
+  border: #0d253f 1px solid;
   border-radius: 1em;
 }
 
@@ -250,7 +251,7 @@ body {
   padding: 0.3em 2em;
   border-radius: 20px;
   border: 1px solid transparent;
-  color: #00006d;
+  color: #0d253f;
   transition: all .2s ease;
 }
 
@@ -262,10 +263,11 @@ body {
 
 
 /*Slider1*/
+
 .slider {
   position: relative;
   height: 25em;
-  width: 250px;
+  width: 100%;
   color: #000000;
   margin-left: 1em;
   margin-bottom: 2em;
@@ -282,9 +284,9 @@ body {
   position: absolute;
   bottom: 40px;
   left: 20px;
-  border: 1px solid #00006d;
+  border: 1px solid #0d253f;
   padding: 1em 1em;
-  background-color: #00006dec;
+  background-color: rgb(13 37 63);
   color: #f9f9f9;
   border-radius: 50%;
   font-weight: bold;
@@ -317,7 +319,7 @@ body {
   height: 2em;
   display: flex;
   align-items: center;
-  border: 1px solid #00006d;
+  border: 1px solid #0d253f;
   text-align: center;
   border-radius: 30px;
 }
@@ -366,6 +368,7 @@ body {
   width: 100%;
   height: 11em;
   object-fit: cover;
+  object-position: center;
   border-radius: 1em;
 }
 

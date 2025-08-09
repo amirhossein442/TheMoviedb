@@ -10,21 +10,18 @@ export const Sliders3 = () => {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     fetch(
-      "https://api.themoviedb.org/3/trending/movie/day?api_key=c749ba85a95fb5a1032d6cc9d8bf39a0"
+      "https://api.themoviedb.org/3/movie/popular?api_key=c749ba85a95fb5a1032d6cc9d8bf39a0"
     )
       .then((res) => res.json())
-      .then((data) => setMovies(data.results))
-      
-      .catch((err) => console.error("Error fetching movies:", err));
+      .then((data) => setMovies(data.results));
   }, []);
-  console.log(movies)
   return (
     <>
       <Between />
       <Swiper
         navigation={true}
         modules={[Navigation]}
-        spaceBetween={0}
+        spaceBetween={20}
         slidesPerView={5}
       >
         {movies.map((movie) => (

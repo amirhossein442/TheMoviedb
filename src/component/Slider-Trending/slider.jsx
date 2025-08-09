@@ -14,8 +14,6 @@ export const Sliders1 = () => {
     )
       .then((res) => res.json())
       .then((data) => setMovies(data.results))
-      
-      .catch((err) => console.error("Error fetching movies:", err));
   }, []);
   console.log(movies)
   return (
@@ -24,7 +22,7 @@ export const Sliders1 = () => {
       <Swiper
         navigation={true}
         modules={[Navigation]}
-        spaceBetween={0}
+        spaceBetween={20}
         slidesPerView={5}
       >
         {movies.map((movie) => (
@@ -34,7 +32,7 @@ export const Sliders1 = () => {
                 onClick={() =>
                   window.open(`https://www.themoviedb.org/movie/${movie.id}`)
                 }
-                src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
+                src={`https://image.tmdb.org/t/p/w780${movie.poster_path}`}
                 alt={movie.title}
               />
               <p>{Math.round(movie.vote_average * 10)}</p>
