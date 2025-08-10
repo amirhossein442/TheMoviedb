@@ -39,5 +39,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Designing a movie and series website with React",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirhossein442/TheMoviedb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirhossein442/TheMoviedb/issues"
+  },
+  "homepage": "https://github.com/amirhossein442/TheMoviedb#readme"
 }

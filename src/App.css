@@ -7,7 +7,6 @@ body {
 
 /*navbar*/
 .navbar {
-  position: fixed;
   display: flex;
   background-color: #0d253f;
   right: 0;
@@ -36,10 +35,8 @@ body {
 }
 
 .navbar-search {
-  margin-top: 0;
   display: flex;
   align-items: center;
-  margin-left: 20px;
 }
 
 .navbar-button {
@@ -50,22 +47,22 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
   margin-right: 20px;
-  align-items: center;
+  
 }
-
 
 .header input {
   display: flex;
+  width: 100%;
   border: 1px solid #bbbbbba6;
   border-left: none;
   border-right: none;
   border-top: none;
   border-bottom: none;
-  width: 100%;
-  height: 45px;
+  height: 2.5rem;
   font-size: 1rem;
   color: #808080;
 }
+
 
 .header input:focus {
   outline: none;
