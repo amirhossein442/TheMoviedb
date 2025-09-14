@@ -20,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +44,9 @@
   },
   "description": "Designing a movie and series website with React",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amirhossein442/TheMoviedb.git"
@@ -52,5 +56,5 @@
   "bugs": {
     "url": "https://github.com/amirhossein442/TheMoviedb/issues"
   },
-  "homepage": "https://github.com/amirhossein442/TheMoviedb#readme"
+  "homepage": "https://amirhossein442.github.io/TheMoviedb-Clone"
 }
