@@ -1,4 +1,5 @@
 {
+  "homepage": "/",
   "name": "program-2",
   "version": "0.1.0",
   "private": true,
@@ -55,6 +56,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amirhossein442/TheMoviedb/issues"
-  },
-  "homepage": "https://amirhossein442.github.io/TheMoviedb-Clone"
+  }
 }
