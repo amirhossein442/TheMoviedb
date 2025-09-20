@@ -28,7 +28,7 @@ export const Header1 = () => {
           <a href="#">Login</a>
           <a href="#">Join up</a>
           <a href="#" onClick={handleSearchClick}>
-            {<FaSearch />}
+            <FaSearch />
           </a>
         </div>
       </div>
