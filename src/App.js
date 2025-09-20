@@ -10,17 +10,17 @@ import { Sliders3 } from "./component/Slider-What's Popular/slider";
 function App() {
   return (
     <div>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Sliders1 />
-        <Sliders2 />
-        <Sliders3 />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+        <header>
+          <Header />
+        </header>
+        <main>
+          <Sliders1 />
+          <Sliders2 />
+          <Sliders3 />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
     </div>
   );
 }

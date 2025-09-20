@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Menu } from "./menuLink";
 import React, { useRef, useState } from "react";
 
@@ -21,16 +20,8 @@ export const Header1 = () => {
     <div className="header">
       <div className="navbar">
         <div className="navbar-left">
-          <Router>
             <img src={Logo} alt="Logo" />
             <Menu />
-            <Routes>
-              <Route path="/" element={<h2></h2>} />
-              <Route path="/tvShow" element={<h2></h2>} />
-              <Route path="/people" element={<h2></h2>} />
-              <Route path="/more" element={<h2></h2>} />
-            </Routes>
-          </Router>
         </div>
         <div className="navbar-right">
           <button>EN</button>
